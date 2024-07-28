@@ -1,0 +1,47 @@
+/* NoteForm.css */
+
+.markdown-container {
+  height: 400px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.pane-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pane-heading {
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #ced4da;
+}
+
+.markdown-input {
+  resize: none;
+  height: calc(100% - 43px);
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
+.markdown-preview {
+  height: calc(100% - 43px);
+  width: 100%;
+  padding: 10px;
+  overflow: auto;
+}
+
+.sash-custom-class {
+  background-color: #ced4da;
+  width: 4px;
+  cursor: col-resize;
+}
+
+@media (max-width: 768px) {
+  .markdown-container {
+    height: 600px;
+  }
+}
